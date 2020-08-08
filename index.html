@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #startreset{
+            background-color: rgba(255, 255, 255, 0.4);
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            color: white;
+            width: 80px;
+            height: 25px;
+            text-align: center;
+            margin: 10px auto;
+            padding: 5px;
+            transition: all 0.5s;
+        }
+
+        #startreset:hover{
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        #startreset:active{
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        #timeremaining{
+            position: absolute;
+            background-color: rgba(255, 255, 255);
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            color: black;
+            width: 100px;
+            height: 25px;
+            left: 900px;
+            bottom: 10px;
+            text-align: center;
+            margin: 10px 10px;
+            padding: 5px;
+            display: none;
+        }
+        #gameover{
+            position: absolute;
+            top: 15px;
+            left: 100px;
+            margin: auto;
+            height: 500px;
+            width: 750px;
+            background-color: red;
+            color: white;
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            font-weight: 900;
+            text-align: center;
+            font-size: 5em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="score">
+            SCORE: <span id="scoreValue">0</span>
+        </div>
+        <div id="correct">
+            CORRECT
+        </div>
+        <div id="wrong">
+            TRY AGAIN
+        </div>
+
+        <div id="question">
+            
+        </div>
+        <div id="instruction">
+            Click on the correct answer.
+        </div>
+        
+        <div id="choices">
+            <div id="box1" class="boxes">
+
+            </div>
+            <div id="box2" class="boxes">
+
+            </div>
+            <div id="box3" class="boxes">
+
+            </div>
+            <div id="box4" class="boxes">
+
+            </div>
+        </div>
+
+        <div id="startreset">Start</div>
+
+        <div id="timeremaining"><span id="timeremainingvalue">60 sec</span></div>
+
+        <div id="gameover">
+            <p>GAME OVER</p>
+            <p>Score:</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

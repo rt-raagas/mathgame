@@ -1,0 +1,166 @@
+html{
+    background-color: #BFB4AA;
+    height: 100%;
+}
+
+#container{
+    height: 650px;
+    width: 950px;
+    background-color: #BF4C0A;
+    margin: 50px auto;
+    padding: 10px;
+    position: relative;
+}
+
+#score{
+    background-color: #F2845C;
+    color: whitesmoke;
+    padding: 10px;
+    height: 40px;
+    width: 125px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    left: 900px;
+}
+
+#correct, #wrong{
+    color: #F29057;
+    padding: 10px;
+    /* height: 40px;
+    width: 125px; */
+    font-family: 'Montserrat';
+    font-weight: black;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    left: 450px;
+    display: none;
+}
+
+#question{
+    width: 600px;
+    height: 350px;
+    margin: 50px auto 10px auto;
+    background-color: #F29057;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 10em;
+
+}
+
+#instruction{
+    width: 600px;
+    height: 40px;
+    margin: 10px auto 10px auto;
+    background-color: #F2845C;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 700;
+    color: #BF4C0A;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+#choices{
+    height: 100px;
+    width: 600px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    padding: 0px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#box1{
+    flex: 1;
+    background-color: white;
+    color: rgb(22, 22, 22);
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 0px 5px;
+    font-size: 2em;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#box2{
+    flex: 1;
+    background-color: lightgray;
+    color: rgb(22, 22, 22);
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 0px 5px;
+    font-size: 2em;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#box3{
+    flex: 1;
+    background-color: white;
+    color: rgb(22, 22, 22);
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 0px 5px;
+    font-size: 2em;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#box4{
+    flex: 1;
+    background-color: lightgray;
+    color: rgb(22, 22, 22);
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    padding: 0px 5px;
+    font-size: 2em;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#box1:hover{
+    background-color: #1BA6A5;
+}
+
+#box2:hover{
+    background-color: #FFA875;
+}
+
+#box3:hover{
+    background-color: #F29057;
+}
+
+#box4:hover{
+    background-color: #57F2F1;
+}
+
+
+#box1:active{
+    background-color: salmon;
+}
+
+#box2:active{
+    background-color: salmon;
+}
+#box3:active{
+    background-color: salmon;
+}
+#box4:active{
+    background-color: salmon;
+}
